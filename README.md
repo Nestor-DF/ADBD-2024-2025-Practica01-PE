@@ -50,7 +50,7 @@
 ## Relaciones
 
 ### 1. Medicamento (0,N) - (0,N) Laboratorio
-- **Descripción**: Un medicamento puede no ser fabricado por un laboratorio o puede ser fabricado por varios. Un laboratorio fabrica uno o más medicamentos.
+- **Descripción**: Un medicamento puede **no** ser suministrado por un laboratorio (lo hace la propia farmacia) o puede ser suministrado por varios. Un laboratorio fabrica uno o más medicamentos.
   - `Fecha_suministración` (fecha): Fecha en la que se suministró el medicamento a la farmacia por el laboratorio. Ejemplo: `02/03/2023`
 
 ### 2. Medicamento (1,N) - (1,1) Familia
@@ -60,7 +60,7 @@
 - **Descripción**: Un medicamento pertenece a un solo pedido y un pedido puede tener uno o más medicamentos.
 
 ### 4. Cliente con crédito (0,1) - (1,N) Pedido
-- **Descripción**: Un cliente con crédito puede estar involucrado en uno o más pedidos y un pedido puede estar asociado a un cliente con crédito o cero (en el caso de que sea un pedido/venta normal).
+- **Descripción**: Un cliente con crédito puede estar involucrado en uno o más pedidos y un pedido puede estar asociado a un cliente con crédito o cero (en el caso de que sea un cliente sin crédito).
 
 ## Restricciones Semánticas
 
