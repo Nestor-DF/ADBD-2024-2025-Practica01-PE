@@ -49,7 +49,7 @@
   
 ## Relaciones
 
-### 1. Medicamento (,N) - (0,N) Laboratorio
+### 1. Medicamento (1,N) - (0,N) Laboratorio
 - **Descripción**: Un medicamento puede **no** ser suministrado por un laboratorio (lo hace la propia farmacia) o puede ser suministrado por varios. Un laboratorio fabrica uno o más medicamentos.
   - `Fecha_suministración` (fecha): Fecha en la que se suministró el medicamento a la farmacia por el laboratorio. Ejemplo: `02/03/2023`
 
